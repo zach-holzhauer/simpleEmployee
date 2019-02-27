@@ -1,10 +1,9 @@
-import { createStore, applyMiddleware } from 'redux'
-import createSagaMiddleware from 'redux-saga'
-
-import rootReducer from '../reducers'
+import { createStore, applyMiddleware, compose } from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import rootReducer from '../reducers';
 import initialState from "./initialState";
 
-import rootSaga from "../sagas/";
+import rootSaga from "../sagas/index";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -12,9 +11,13 @@ const configureStore = (preloadedState = initialState) => {
   const store = createStore(
     rootReducer,
     preloadedState,
-    applyMiddleware(sagaMiddleware)
+    compose(
+      applyMiddleware(
+        sagaMiddleware
+      )
+    )
   );
-  sagaMiddleware.run(rootSaga);
+  sagaMiddleware.run((rootSaga));
   return store
 };
 

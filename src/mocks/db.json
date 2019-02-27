@@ -1,0 +1,60 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "title": "employee",
+      "firstName": "John",
+      "lastName": "Employee",
+      "department": 1
+    },
+    {
+      "id": 2,
+      "title": "employee",
+      "firstName": "James",
+      "lastName": "Employee",
+      "department": 2
+    },
+    {
+      "id": 3,
+      "title": "employee",
+      "firstName": "Jacob",
+      "lastName": "Employee",
+      "department": 3
+    },
+    {
+      "id": 4,
+      "title": "manager",
+      "firstName": "Mitch",
+      "lastName": "Manager",
+      "department": 1
+    },
+    {
+      "id": 5,
+      "title": "manager",
+      "firstName": "Michael",
+      "lastName": "Manager",
+      "department": 2
+    },
+    {
+      "id": 6,
+      "title": "manager",
+      "firstName": "Mel",
+      "lastName": "Manager",
+      "department": 3
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Sales"
+    },
+    {
+      "id": 2,
+      "name": "Accounting"
+    },
+    {
+      "id": 3,
+      "name": "Human Resources"
+    }
+  ]
+}
